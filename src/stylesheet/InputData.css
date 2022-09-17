@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Merienda+One&family=Merriweather+Sans&family=Open+Sans:wght@400;800&family=Source+Code+Pro&display=swap');
+
+textarea.input-data {
+  border: none;
+  background-color: black;
+  box-shadow: rgb(188 0 255 / 64%) 0px 10px 25px, rgb(255 0 0 / 22%) 0px 4px 20px;
+  border-radius: 30px;
+  padding: 20px 0 0 20px;
+  width: 476px;
+  height: 125px;
+  resize: none;
+  font-family: 'Source Code Pro', monospace;
+  color: green;
+}
+
+textarea.input-data:hover{
+  background-color: rgb(30, 30, 30);
+}

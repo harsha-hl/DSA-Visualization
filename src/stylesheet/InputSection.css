@@ -1,0 +1,175 @@
+section.input-section {
+  padding: 10px 50px 0;
+  width: 35%;
+  height: 82%;
+  float: right;
+}
+
+div.text-input1 {
+  font-family: 'Merriweather Sans', sans-serif;
+  background: -webkit-linear-gradient(#ffb6ff, #b344ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+  margin:0;
+  margin-bottom: 10px;
+  font-size: 25px;
+  margin-right: 50px;
+  float: left;
+  margin-top: 1.5%;
+  position: relative;
+  text-align: middle;
+}
+
+.precaution {
+  margin-top: 13.5px;
+  margin-left: 0px;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  float: left;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  background-size: cover;
+  outline:0px !important;
+}
+
+.cautionImg {
+  width: 22px;
+  height: 22px;
+  display: block;
+  float: left;
+}
+
+
+.coverDom {
+  width: 1000%;
+  height: 1000%;
+  top:0;
+  left:0;
+  right:0;
+  bottom: 0;
+  position: fixed;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1002;
+}
+
+.cautionContent {
+  width: 400px;
+  height: 300px;
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  bottom: 25%;
+  position: fixed;
+  background-color: white;
+  z-index: 1003;
+  border-color: black;
+  border-width: 2px;
+  border-style: double;
+}
+
+button.input-button {
+  padding: 10px 40px;
+    margin-top: 4.5px;
+    float: right;
+    text-align: middle;
+    border: none;
+    border-radius: 2px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: rgb(255 255 255 / 30%) 0px -16px 57px, rgb(255 255 255 / 22%) 0px 15px 31px;
+}
+
+button.input-button-close {
+  height:10%;
+  margin-top: 1%;
+  float: right;
+  text-align: middle;
+  border: none;
+  background-color: Black;
+  color: white;
+  cursor: pointer;
+}
+
+p.linestyle {
+  margin:5px;
+}
+
+div.text-input2 {
+  font-family: 'Merriweather Sans', sans-serif;
+  background: -webkit-linear-gradient(#ffb6ff, #b344ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px;
+  margin:0;
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  float: left;
+  position: relative;
+  text-align: middle;
+}
+
+
+.glow-on-hover {
+  float: right;
+  width: 130px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}

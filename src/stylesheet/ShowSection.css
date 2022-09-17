@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Merienda+One&family=Merriweather+Sans&display=swap');
+
+section.show-section {
+  padding: 10px 50px 0;
+  width: 50%;
+  height: 82%;
+  margin: 0;
+  float: left;
+}
+
+div.text-show1 {
+  font-family: 'Merriweather Sans', sans-serif;
+  width: 25%;
+  height: 4.2%;
+  margin: 1px;
+  margin-top: 1.5%;
+  float: left;
+  position: relative;
+  text-align: middle;
+}
+.varr{
+  background: -webkit-linear-gradient(#ffb6ff, #b344ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px;
+}
+
+.stopping {
+  padding: 10px 15px;
+  width: 100px;
+  margin-top: 5px;
+  font-size: 15px;
+  background-color: white;
+  color: black;
+  margin-right: 5px;
+  float: right;
+  position: relative;
+  text-align: middle;
+  border: none;
+  border-radius: 5px;
+}
+
+.stopping:hover{
+  background-color: #000000;
+  color: white;
+}
